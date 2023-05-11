@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
 
-body{
+body {
     width: 90%;
     margin: 0 auto;
 }
 
-header{
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -19,106 +19,174 @@ header{
     top: 0;
 }
 
-nav{
+nav {
     display: flex;
     width: 55%;
     justify-content: space-evenly;
 }
 
-.nav_a:hover{
+.nav_a:hover {
     transform: translateY(0.3rem) scale(1.1);
-    border-bottom: 0.1rem solid black;
+    border-bottom: 0.15rem solid black;
 }
 
-.boton_header:hover{
+.boton_header:hover {
     background-color: black;
-    transform: scale(1.2) translateY(0.3rem);
+    transform: scale(1.1) translateY(0.3rem);
 }
 
-.logo{
+.container {
+    border: 2px solid red;
+}
+
+.logo {
     max-height: 25vh;
 }
 
-.decoracion_a{
+.decoracion_a {
     text-decoration: none;
 }
 
-.nav_a{
+.nav_a {
     color: black;
 }
 
-.menu_icono{
+.menu_icono {
     display: none;
 }
 
-.nav_a, .boton_header{
+.nav_a,
+.boton_header {
     transition: all 0.3s ease-in-out 0.1s;
 }
 
-.home_nav{
+.home_nav {
     font-weight: bold;
 }
 
-.boton_header{
+.boton_header {
     color: #fff;
     background-color: #3952B6;
     text-align: center;
     border-radius: 15rem;
 }
 
-@media (max-width:480px) {
-    nav{
+.hero_container{
+    display: flex;
+}
+
+
+@media (min-width:475px) {
+    h1{
+        font-size: 1.5rem;
+    }
+    nav,
+    .boton_header {
         display: none;
     }
-    .menu_icono{
+
+    .container {
+        justify-content: space-evenly;
+    }
+
+    .menu_icono {
         display: block;
-        height: 5rem;
+        height: 2.5rem;
     }
-}
-
-@media (min-width:481px), (max-width:768px){
-    nav{
+    .hero_container{
+        text-align: center;
+        height: 70vh;
+    }
+    .div_hero{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .div_input_hero{
+        max-width: 100%;
+    }
+    .input_hero{
+        padding: 1.2rem 2.5rem;
+    }
+    .i_input{
+        font-size: 1.5rem;
+    }
+    .search_a{
+        display: none;
+    }
+    .hero_img{
         display: none;
     }
 }
 
-@media (min-width:769px),(max-width:1279px){
-    nav{
-        display: none;
-    }
-    .boton_header{
-        font-size: 0.7rem;
-    }
-    .boton_header{
-        padding: 0.3rem 0.8rem;
+@media (min-width:640px) {
+    .boton_header {
+        display: block;
+        font-size: 1.2rem;
+        padding: 0.5rem 1rem;
     }
 }
 
-@media (min-width:1280),(max-width:1919px){
-    nav{
+@media (min-width:768px) {}
+
+@media (min-width:1024px) {
+    nav {
         display: flex;
     }
-    .logo{
-        max-height: 20vh;
+
+    .logo {
+        height: 10rem;
     }
-    .nav_a,.boton_header{
+
+    .nav_a,
+    .boton_header {
         font-size: 0.8rem;
     }
-    .boton_header{
-        padding: 0.8rem 1.5rem;
+
+    .menu_icono {
+        display: none;
     }
 }
 
+@media (min-width:1280px) {
 
-@media (min-width:1920px){
-    nav{
+    .nav_a,
+    .boton_header {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width:1600px) {
+
+    .nav_a,
+    .boton_header {
+        font-size: 1rem;
+    }
+
+    .boton_header {
+        padding: 1rem 2rem;
+    }
+}
+
+@media (min-width:1920px) {
+    nav {
         display: flex;
     }
-    .nav_a{
+
+    .logo {
+        height: 15rem;
+    }
+
+    .nav_a {
         font-size: 1.2rem;
     }
 
-    .boton_header{
+    .menu_icono {
+        display: none;
+    }
+
+    .boton_header {
+        display: block;
         font-size: 1.2rem;
         padding: 1.1rem 2.4rem;
     }
