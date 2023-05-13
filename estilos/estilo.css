@@ -118,10 +118,11 @@ h1,
     justify-content: space-evenly;
     padding-left: 0.5rem;
     flex-wrap: wrap;
+    flex-grow: 1;
 }
 
 .listing_imgs {
-    height: 30vh;
+    height: 35vh;
     border-radius: 5%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -300,6 +301,11 @@ h1,
     .listing_search_p {
         display: none;
     }
+
+    .div_search_listing{
+        justify-content: center;
+    }
+
 }
 
 @media (min-width:640px) {
@@ -557,6 +563,10 @@ h1,
 
     .p_titulo_cuatro {
         font-size: calc(100%*1.4);
+    }
+
+    .separar_img_titulo{
+        height: 35rem;
     }
 
     .precio_listing {
