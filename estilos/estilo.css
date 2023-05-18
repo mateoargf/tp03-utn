@@ -103,6 +103,7 @@ form button {
 
 .hero_container {
     display: flex;
+    justify-content: space-between;
 }
 
 .section_listing {
